@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+	<div class="card-title">
+		<img src="{{ product.image.url }}" alt="hat_image" height="250px" width="250px" class="img-fluid">
+	</div>
+	
+	<div class="card-body">
+		<ul>
+		<li>{{ product.title }}</li>
+		<li>{{ product.description }}</li>
+		<li>{{ product.price }}</li>
+		<li>{{ extra_context }}</li>
+	</ul>
+	</div>
+	
+</div>
+	
+
+{% endblock content %}
